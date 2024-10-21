@@ -1,38 +1,45 @@
 [user]
-    name = akash
-    email = akashresides@gmail.com
-[github]
-    user = akashresides
+	name = akash
+	email = akashresides@gmail.com
 [init]
-    defaultbranch = main
+	defaultbranch = main
 [core]
-    pager = delta
-    editor = nvim
+	pager = delta
+	editor = nvim
 [interactive]
-    diffFilter = delta --color-only
+	diffFilter = delta --color-only
 [delta]
-    navigate = true    # use n and N to move between diff sections
-    side-by-side = true
-    # delta detects terminal colors automatically; set one of these to disable auto-detection
-    # dark = true
-    # light = true
+	navigate = true    # use n and N to move between diff sections
+	side-by-side = true
+	# tokyonight storm colors
+	minus-style                   = syntax "#3f2d3d"
+	minus-non-emph-style          = syntax "#3f2d3d"
+	minus-emph-style              = syntax "#763842"
+	minus-empty-line-marker-style = syntax "#3f2d3d"
+	line-numbers-minus-style      = "#914c54"
+	plus-style                    = syntax "#283b4d"
+	plus-non-emph-style           = syntax "#283b4d"
+	plus-emph-style               = syntax "#316172"
+	plus-empty-line-marker-style  = syntax "#283b4d"
+	line-numbers-plus-style       = "#449dab"
+	line-numbers-zero-style       = "#3b4261"
 [merge]
-    conflictstyle = diff3
+	conflictstyle = diff3
 [diff]
-    colorMoved = default
+	colorMoved = default
 [color]
-    ui = auto
+	ui = auto
 [color "branch"]
-    current = yellow bold
-    local = green bold
-    remote = cyan bold
-[color "diff"]
-    meta = yellow bold
-    frag = magenta bold
-    old = red bold
-    new = green bold
-    whitespace = red reverse
-[color "status"]
-    added = green bold
-    changed = yellow bold
-    untracked = red bold
+	current = yellow bold
+	local = green bold
+	remote = cyan bold
+	[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+	[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red bold
